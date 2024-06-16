@@ -36,7 +36,7 @@ func NewDeleteMessage(chatID int64, messageID int) DeleteMessageConfig {
 // NewTopicMessage creates a new Message which will be sent to a topic thread.
 //
 // chatID is where to send it, topicID is the topic thread id, text is the message text.
-func NewTopicMessage(chatID int64, topicID int, text string) MessageConfig {
+func NewTopicMessage(chatID int64, topicID string, text string) MessageConfig {
 	return MessageConfig{
 		BaseChat: BaseChat{
 			ChatID:           chatID,
